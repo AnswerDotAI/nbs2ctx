@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbs2ctx"
+  site-url: "https://AnswerDotAI.github.io/nbs2ctx"
+  description: "Turning Jupyter notebooks into LLM-useable context"
+  repo-branch: main
+  repo-url: "https://github.com/AnswerDotAI/nbs2ctx"
