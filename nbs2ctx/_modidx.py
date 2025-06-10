@@ -5,4 +5,7 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://AnswerDotAI.github.io',
                 'git_url': 'https://github.com/AnswerDotAI/nbs2ctx',
                 'lib_path': 'nbs2ctx'},
-  'syms': {'nbs2ctx.core': {'nbs2ctx.core.foo': ('core.html#foo', 'nbs2ctx/core.py')}}}
+  'syms': { 'nbs2ctx.core': { 'nbs2ctx.core.find_ipynb_files': ('core.html#find_ipynb_files', 'nbs2ctx/core.py'),
+                              'nbs2ctx.core.generate_xml': ('core.html#generate_xml', 'nbs2ctx/core.py'),
+                              'nbs2ctx.core.main': ('core.html#main', 'nbs2ctx/core.py'),
+                              'nbs2ctx.core.render_notebook_to_markdown': ('core.html#render_notebook_to_markdown', 'nbs2ctx/core.py')}}}
