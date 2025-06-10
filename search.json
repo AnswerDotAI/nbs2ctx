@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbs2ctx",
+    "section": "",
+    "text": "nbs2ctx is a minimal CLI for turning a directory of notebooks (e.g. an NBDev project) into context for an LLM. For example, from the root dir of this github repo we could run:\nnbs2ctx nbs ctx.xml\nThis will create a file ctx.xml with the contents of all the notebooks in the nbs folder.\n&lt;documents&gt;\n&lt;document index=\"1\"&gt;\n&lt;source&gt;00_core.ipynb&lt;/source&gt;\n&lt;document_content&gt;\n# nbs2ctx\n\n&gt; Turning Jupyter notebooks into LLM-ready context\n\n```python\n#| default_exp core\n... and so on, with the full contents of the notebook\n\n\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/AnswerDotAI/nbs2ctx.git\nor from pypi\n$ pip install nbs2ctx",
+    "crumbs": [
+      "nbs2ctx"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "nbs2ctx",
+    "section": "",
+    "text": "nbs2ctx is a minimal CLI for turning a directory of notebooks (e.g. an NBDev project) into context for an LLM. For example, from the root dir of this github repo we could run:\nnbs2ctx nbs ctx.xml\nThis will create a file ctx.xml with the contents of all the notebooks in the nbs folder.\n&lt;documents&gt;\n&lt;document index=\"1\"&gt;\n&lt;source&gt;00_core.ipynb&lt;/source&gt;\n&lt;document_content&gt;\n# nbs2ctx\n\n&gt; Turning Jupyter notebooks into LLM-ready context\n\n```python\n#| default_exp core\n... and so on, with the full contents of the notebook\n\n\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/AnswerDotAI/nbs2ctx.git\nor from pypi\n$ pip install nbs2ctx",
+    "crumbs": [
+      "nbs2ctx"
+    ]
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "nbs_to_ctx",
+    "section": "",
+    "text": "source\n\nfind_ipynb_files\n\n find_ipynb_files (directory)\n\nFind all .ipynb files in the directory and its subdirectories.\n\nfind_ipynb_files('.')\n\n['./index.ipynb', './00_core.ipynb']\n\n\n\nsource\n\n\nrender_notebook_to_markdown\n\n render_notebook_to_markdown (nb_path)\n\nConvert a Jupyter notebook to markdown, including markdown cells, code cells, and limited text outputs.\n\nrender_notebook_to_markdown('./index.ipynb')[:50]\n\n'```python\\n#| hide\\nfrom nbs2ctx.core import *\\n```\\n\\n'\n\n\n\nsource\n\n\ngenerate_xml\n\n generate_xml (directory)\n\nGenerate an XML string containing markdown-rendered content from all notebooks.\n\ngenerate_xml('.')[:150]\n\n'&lt;documents&gt;\\n&lt;document index=\"1\"&gt;\\n&lt;source&gt;00_core.ipynb&lt;/source&gt;\\n&lt;document_content&gt;\\n# nbs_to_ctx\\n\\n&gt; Turning Jupyter notebooks into LLM-ready context'\n\n\n\nsource\n\n\nmain\n\n main (directory:&lt;Directorycontaining.ipynbfiles&gt;, output:&lt;OutputXMLfile&gt;)\n\nConvert .ipynb files to XML for LLMs",
+    "crumbs": [
+      "nbs_to_ctx"
+    ]
+  }
+]
